@@ -45,7 +45,7 @@ The parametrized constructor is the one that can initialize the instance variabl
 
    ### Static Methods
    - It belongs to a class rather than an object
-   - Can be invoked without the need of creating an instance of a class
+   - Can be invoked without the need of creating an instance of a class rather than the class name and the method itself and the method
    - Able to access static data members and change value of it.
 
    - Cannot use non static data members or call non static methods directly.
