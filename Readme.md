@@ -34,7 +34,7 @@ The parametrized constructor is the one that can initialize the instance variabl
   ### Static variables
   - used to refer to the common property of all objects. It gets memory only once in the class area at the time of class loading.
   - Problem without static variable
-***class Student{  
+- ***class Student{  
      int rollno;  
      String name;  
      String college="ITS";  
