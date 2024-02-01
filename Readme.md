@@ -24,21 +24,23 @@ The parametrized constructor is the one that can initialize the instance variabl
  - Used to declare members (variables, methods, and nested classes) that belong to the class itself rather than instances of the class. 
  - When used, it primarily affects the scope, visibility, and behavior of members
  - It is also used for memory management
+   
   ## Scenarios where static keyword impacts memory management
   - *Shared Memory*: When a variable is declared as static, it is stored in a fixed memory location associated with the class itself, rather than being allocated separately for each instance of the class. This means that all instances of the class share the same memory location for the static variable. By sharing memory, the overall memory footprint can be reduced, especially if the static variable holds a large amount of data.
+    
   - *Caching and Optimization*: Static variables can be used for caching frequently used data, which can help improve performance by reducing the need for repeated calculations or data retrieval. By storing data in a static variable, it can be shared across multiple instances of the class, reducing the memory and computational overhead.
 
 
   ### Static variables
   - used to refer to the common property of all objects. It gets memory only once in the class area at the time of class loading.
   - Problem without static variable
-  ```
-  class Student{  
+```class Student{  
      int rollno;  
      String name;  
      String college="ITS";  
-}  ```
-   - *Suppose there are 500 students in my college, now all instance data members will get memory each time when the object is created. All students have its unique rollno and name, so instance data member is good in such case. Here, "college" refers to the common property of all objects. If we make it static, this field will get the memory only once hence saving memory or else will get memory each time when the instance is created  *
+}```
+
+ - *Suppose there are 500 students in my college, now all instance data members will get memory each time when the object is created. All students have its unique rollno and name, so instance data member is good in such case. Here, "college" refers to the common property of all objects. If we make it static, this field will get the memory only once hence saving memory or else will get memory each time when the instance is created  *
 
 
    ### Static Methods
